@@ -1,0 +1,1 @@
+{"processes":{"2be7e07b-6445-43df-b8b0-c23d726b06ea":{"parent":"6fce9498-d998-4375-89da-df5882e18104","children":[]},"6fce9498-d998-4375-89da-df5882e18104":{"parent":null,"children":["2be7e07b-6445-43df-b8b0-c23d726b06ea"]}},"files":{"/home/usuario/DSI-P6/src/Ejercicio-03/Cifrado.ts":["2be7e07b-6445-43df-b8b0-c23d726b06ea"]},"externalIds":{}}
