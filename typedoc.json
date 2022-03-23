@@ -1,4 +1,10 @@
 {
-  "entryPoints": [],
+  "entryPoints": [
+    "./src/Ejercicio-04/Collectable.ts",
+    "./src/Ejercicio-04/Searchable.ts",
+    "./src/Ejercicio-04/SearchableCollection.ts",
+    "./src/Ejercicio-04/NumericSearchableCollection.ts",
+    "./src/Ejercicio-04/StringSearchableCollection.ts"
+  ],
   "out": "./docs"
 }
