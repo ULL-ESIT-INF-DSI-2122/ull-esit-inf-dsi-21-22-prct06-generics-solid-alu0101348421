@@ -3,17 +3,31 @@ import { Pokemon } from './Pokemon';
 import { Saiyan } from './Saiyan';
 import { SwordArtOnline } from './SAO';
 
+/**
+ * Clase que representa a un registro de un luchadores
+ * @class Pokedex
+ * @attribute {Pokemon[]} PokemonList Lista de pokemon
+ * @attribute {Saiyan[]} SaiyanList Lista de saiyans
+ * @attribute {SwordArtOnline[]} SAOList Lista de Sword Art Online Players
+ */
 export class Pokedex {
   PokemonList: Pokemon[];
   SAOList: SwordArtOnline[];
   SaiyanList: Saiyan[];
 
+  /**
+   * Constructor
+   */
   constructor() {
     this.PokemonList = [];
     this.SAOList = [];
     this.SaiyanList = [];
   }
 
+  /**
+   * Método que permite añadir un luchador a su lista correspondiente
+   * @param fighter {fighter} Luchador a añadir
+   */
   public addFighter(fighter: fighter): void {
     if (fighter instanceof Pokemon) {
       this.PokemonList.push(fighter);
@@ -24,6 +38,11 @@ export class Pokedex {
     }
   }
 
+  /**
+   * Método que devuelve un luchador a partir de su nombre
+   * @param name {string} Nombre del luchador
+   * @returns {fighter} Luchador
+   */
   public getFighter(name: string): fighter | undefined {
     for (let pokemon of this.PokemonList) {
       if (pokemon.getName() === name) {
@@ -43,6 +62,10 @@ export class Pokedex {
     return undefined;
   }
 
+  /**
+   * Método que devuelve una lista con todos los luchadores
+   * @returns {fighter[]} Lista de luchadores
+   */
   public getAllFighters(): fighter[] {
     let allFighters: fighter[] = [];
     allFighters = allFighters.concat(this.PokemonList);
