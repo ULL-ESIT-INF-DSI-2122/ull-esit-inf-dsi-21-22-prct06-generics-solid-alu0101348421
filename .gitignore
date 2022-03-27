@@ -3,3 +3,4 @@ dist
 package-lock.json
 .vscode
 .coveralls.yml
+.nyc_output
