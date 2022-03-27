@@ -1,6 +1,6 @@
 /**
  * Clase que representa el cifrado y descifrados de un texto
- * mediante el cifrado de César
+ * mediante el cifrado de Vigenere.
  * @class Cifrado
  * @attribute {string} _texto Texto a cifrar o descifrar
  * @attribute {string} _clave Clave para el cifrado
